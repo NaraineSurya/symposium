@@ -24,6 +24,45 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <audio autoplay loop>
+        <source src="assets/img/audio/aud.wav" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    <style>
+        .backclip {
+            position: absolute;
+            right:0;
+            bottom: 0;   
+        }
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            /* line 44, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
+            .slider-area .hero__caption {
+              padding-top: 80px;
+            }
+          }
+          
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            /* line 44, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
+            .slider-area .hero__caption {
+              padding-top: 80px;
+            }
+          }
+          
+          @media only screen and (min-width: 576px) and (max-width: 767px) {
+            /* line 44, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
+            .slider-area .hero__caption {
+              padding-top: 80px;
+            }
+          }
+          
+          @media (max-width: 575px) {
+            /* line 44, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
+            .slider-area .hero__caption {
+              padding-top: 80px;
+            }
+          }
+    </style>
 </head>
 <body class="black-bg">
     <!-- ? Preloader Start -->
@@ -40,8 +79,14 @@
     <!-- Preloader Start -->
 <main>
     <!--? slider Area Start-->
-    <div class="slider-area background-video position-relative">
+    <div class="slider-area position-relative">
+      
+        <video autoplay loop muted plays-inline class="backclip">
+            <source src="assets/img/hero/vid.mp4" type="video/mp4">
+        </video>
+       
         <div class="slider-active">
+            
             <!-- Single Slider -->
             <div class="single-slider slider-height d-flex align-items-center">
                 <div class="container">
@@ -220,7 +265,7 @@
         </div>
     </div>
     <div class="col-xl-12">
-        <div class="section-tittle mt-30 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+        <div class="section-tittle mt-65 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
             <h2 >NON TECHNICAL EVENTS</h2>
         </div>
     </div>
@@ -665,6 +710,7 @@
   <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
+
 
 <!-- JS here -->
 

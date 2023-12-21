@@ -3399,6 +3399,7 @@ hr {
 .slider-area {
   margin-top: -1px;
   background-image: url(../img/hero/arth1.png);
+  position: relative;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
