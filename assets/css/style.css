@@ -3399,11 +3399,11 @@ hr {
   display: none; /* Hide the video by default */
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .backclip {
       display: block; /* Show the video on screens with a maximum width of 600px (adjust as needed) */
   }
-} */
+}
 
 
 @media (max-width: 767px) {
