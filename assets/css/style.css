@@ -3395,6 +3395,30 @@ hr {
   background-size: cover;
 }
 
+.backclip {
+  display: none; /* Hide the video by default */
+}
+
+/* @media only screen and (max-width: 600px) {
+  .backclip {
+      display: block; /* Show the video on screens with a maximum width of 600px (adjust as needed) */
+  }
+} */
+
+
+@media (max-width: 767px) {
+  .backclip {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+  }
+}
+
 /* line 37, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_h1-hero.scss */
 .slider-area {
   margin-top: -1px;
