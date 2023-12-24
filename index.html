@@ -24,6 +24,29 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<style>
+    .modal-content{
+        background-color: black;
+    }
+    .modal-title{
+        color: white;
+    }
+    .contents{
+        color: white;
+    }
+    
+</style>
+
+
+
     <!-- <audio autoplay loop>
         <source src="assets/img/audio/aud.wav" type="audio/mp3">
         Your browser does not support the audio tag.
@@ -161,60 +184,246 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/paper.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/paper.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel1">Papyrus Prism</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/paper.png" alt=""></div> 
+                                      <p class="contents">Team members : 2- 3</p>
+                        <p class="mb-20 contents">Rules and regulations :</p>
+                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                        <p class="contents">The mail with submission should contain:</p>
+                        <p class="contents">Title - theme of the paper</p>
+                        <p class="contents">Name of the participants.</p>
+                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                        <p class="contents">NOTE :</p>
+                        <p class="contents">E -certificates will be provided to all the participants</p>
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                         <div class="overlay">
                             <div class="overlay-content">
-                               
                                 <h3>Papyrus Prism </h3>
-                                <a href="paper.html"><i class="ti-plus"></i></a>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/debugging.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/debugging.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel2">fixit fist</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/debugging.png" alt=""></div> 
+                                      <p class="contents">Team members : 2- 3</p>
+                        <p class="mb-20 contents">Rules and regulations :</p>
+                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                        <p class="contents">The mail with submission should contain:</p>
+                        <p class="contents">Title - theme of the paper</p>
+                        <p class="contents">Name of the participants.</p>
+                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                        <p class="contents">NOTE :</p>
+                        <p class="contents">E -certificates will be provided to all the participants</p>
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Fixit Fest </h3>
-                                <a href="debug.html"><i class="ti-plus"></i></a>
+                                <h3>Fixit Fist </h3>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal2"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/uiux.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/uiux.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel3">design fiesta</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/uiux.png" alt=""></div> 
+                                      <p class="contents">Team members : 2- 3</p>
+                        <p class="mb-20 contents">Rules and regulations :</p>
+                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                        <p class="contents">The mail with submission should contain:</p>
+                        <p class="contents">Title - theme of the paper</p>
+                        <p class="contents">Name of the participants.</p>
+                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                        <p class="contents">NOTE :</p>
+                        <p class="contents">E -certificates will be provided to all the participants</p>
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Design Fiesta </h3>
-                                <a href="uiux.html"><i class="ti-plus"></i></a>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/prompt.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/prompt.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel">prompt craft</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/prompt.png" alt=""></div> 
+                                      <p class="contents">Team members : 2- 3</p>
+                        <p class="mb-20 contents">Rules and regulations :</p>
+                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                        <p class="contents">The mail with submission should contain:</p>
+                        <p class="contents">Title - theme of the paper</p>
+                        <p class="contents">Name of the participants.</p>
+                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                        <p class="contents">NOTE :</p>
+                        <p class="contents">E -certificates will be provided to all the participants</p>
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                         <div class="overlay">
                             <div class="overlay-content">
                                 <h3>Prompt Craft </h3>
-                                <a href="prompt.html"><i class="ti-plus"></i></a>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/workshop.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/workshop.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel5">workshop</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/workshop.png" alt=""></div> 
+                                      <p class="contents">Team members : 2- 3</p>
+                        <p class="mb-20 contents">Rules and regulations :</p>
+                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                        <p class="contents">The mail with submission should contain:</p>
+                        <p class="contents">Title - theme of the paper</p>
+                        <p class="contents">Name of the participants.</p>
+                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                        <p class="contents">NOTE :</p>
+                        <p class="contents">E -certificates will be provided to all the participants</p>
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>workshop </h3>
-                                <a href="workshop.html"><i class="ti-plus"></i></a>
+                                <h3>Workshop </h3>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal5"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                
 
                 <!-- <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
@@ -252,66 +461,300 @@
 
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/ipl.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/ipl.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel6">bidfest 11</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/ipl.png" alt=""></div> 
+                                      <p class="contents">😤🏏</p>
+                        <p class="mb-20 contents">Event members :: 4-5(per team)</p>
+                        <p class="contents">Event description:: IPL auction happens where you get to pick one team at random and then auction 11 players for that team.</p>
+                        <p class="contents">Event rules:: </p>
+                        <p class="contents">1. round one is quiz (based on ipl) to filter all the teams and top 8 teams to go into auction</p>
+                        <p class="contents">2. then you get a team at random choice and one of that teams players can be retained as a captain</p>
+                        <p class="contents">3. before auction date player sets will be released with base price to study the auction tactics as only those players will be used in auction </p>
+                        <p class="contents">4. the auction starts from the given set of players already given with different sets </p>
+                        <p class="contents">5. the winners will be selected based on the team balance ,form of the players and the common stats as the playing 11 will be the final team</p>
+                        <p class="contents">6. must have 5 bowling option , a wicketkeeper and must have at least one allrounder (only 4 foreign players).</p>
+                        <p class="contents">Expected time :: 3hrs  </p>
+                        <p class="contents">What they get if they win:: Cash price for first 2 place </p>
+                        <p class="contents">B+I+D+F+E+S+T=7</p>
+                        <p class="contents">Message is clear ✅🥰</p>
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Bidfest 11 </h3>
-                                <a href="ipl.html"><i class="ti-plus"></i></a>
+                                <h3>Bidfest 11</h3>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal6"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/music.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/music.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel7">tune twist</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/music.png" alt=""></div> 
+                                      <p class="contents">Team: maximum 3 per team</p>
+                        <p class="mb-20 contents">Rounds: 3</p>
+                        <p class="contents">Round 1:  </p>
+                        <p class="contents">1. Guess the song from BGM.  </p>
+                        <p class="contents">2. Each team will be given three BGM and 30 seconds time.</p>
+                        <p class="contents">3. The team that finds all the BGM will move to next round</p>
+                        <p class="contents">Round 2:  </p>
+                        <p class="contents">1. Guess the song from lyrics that is translated in english.  </p>
+                        <p class="contents">2. Each team will be given 3 lyrics of tamil songs that are translated in english. </p>
+                        <p class="contents">3. Each team will be given 20 seconds for each lyrics.</p>
+                        <p class="contents">4. Team that gets the maximum point moves to final round. </p>
+                        <p class="contents">Round 3:  </p>
+                        <p class="contents">1. Bet on number of dialogues you can say said by the celebrity displayed. </p>
+                        <p class="contents">2. This is a face-off round. One person from the team participates. </p>
+                        <p class="contents">3. Photo of a celebrity will be displayed. </p>
+                        <p class="contents">4. Each person should take turns in betting on number of dialogues they can say that is said by the celebrity. </p>
+                        <p class="contents">5. The team that obtains maximum points is the winner.</p>
+                        <p class="contents">6. Points will be deducted if other members of the team tries to help.</p>
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Tune twist </h3>
-                                <a href="music.html"><i class="ti-plus"></i></a>
+                                <h3>Tune Twist</h3>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal7"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/pubg.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/pubg.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel8">Blood Raven</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/pubg.png" alt=""></div> 
+                                      <p class="contents">Rules & Regulations :</p>
+                        <p class="contents">Team members: duo vs duo / duo vs solo</p>
+                        <p class="mb-20 contents">BGMI</p>
+                        <p class="contents">Round 1 </p>
+                        <p class="contents">1. Classic erangle</p>
+                        <p class="contents">Round 2</p>
+                        <p class="contents">1. 10(Ten) team will be shortened </p>
+                        <p class="contents">Round 3</p>
+                        <p class="contents">1. 4(Four) team will be shortened and TDM will be conducted for each team</p>
+                        <p class="contents">Round 4</p>
+                        <p class="contents">1. 2(Two) team will be shortened and TDM will be conducted </p>
+                        <p class="contents">Rules: </p>
+                        <p class="contents">1. No internet and no charger will be provided</p>
+                        <p class="contents">2. Triggers are not allowed</p>
+                        <p class="contents">3. Tablet/ipad are not allowed</p>
+                        <p class="mb-20 contents">4. New ACC are not allowed</p>
+                        <p class="mb-20 contents">FREE FIRE</p>
+                        <p class="contents">Round 1</p>
+                        <p class="contents">1. CLASSIC/BERMUDA</p>
+                        <p class="contents">Round 2</p>
+                        <p class="contents">1. 10(Ten) team will be shortened</p>
+                        <p class="contents">Round 3</p>
+                        <p class="contents">1. 4(Four) team will be shortened and ROOM MATCH will be conducted for each team</p>
+                        <p class="contents">Round 4</p>
+                        <p class="mb-20 contents">1. 2(Two) team will be shortened and ROOM MATCH will be conducted</p>
+                        <p class="mb-20 contents">Rules:</p>
+                        <p class="contents">1. All CHARACTER SKILLS and GUN SKIN are allowed </p>
+                        <p class="contents">2. No internet and no charger will be provided</p>
+                        <p class="contents">3. Triggers are not allowed</p>
+                        <p class="contents">4. Tablet/ipad are not allowed</p>
+                        <p class="mb-20 contents">5. New ACC are not allowed</p>
+                        <p class="mb-20 contents">Note:</p>
+                        <p class="mb-20 contents">E - certificate will be provided for every participants</p>
+
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Blood Raven </h3>
-                                <a href="pubg.html"><i class="ti-plus"></i></a>
+                                <h3>Blood Raven</h3>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal8"><i class="ti-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                    <div class="box snake mb-30">
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/treasure.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel8">Mystic hunt</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/treasure.png" alt=""></div> 
+                                      <p class="contents">Number of Members per Team: 3</p>
+                        <p class="mb-20 contents">Event Description:</p>
+                        <p class="contents">Embark on an exciting treasure hunt adventure where teams of three will navigate through the campus, solving clues and overcoming challenges to uncover hidden treasures. The event promises a mix of mystery, teamwork, and exploration as participants decode clues leading them from one location to the next. </p>
+                        <p class="contents">Rules:  </p>
+                        <p class="contents">1. Teams must consist of exactly three members each.</p>
+                        <p class="contents">2. Participants are required to follow the provided clues to discover the next location.</p>
+                        <p class="contents">3. Clues may involve riddles, puzzles, or physical challenges.</p>
+                        <p class="contents">4. Teams must respect campus rules and regulations during the hunt.</p>
+                        <p class="contents">5. The first team to successfully locate and retrieve the hidden treasure will be declared the winner</p>
+                        <p class="contents">Expected time limit 1.5 -2 hrs</p>
+                        <p class="contents">Note  </p>
+                        <p class="contents">E- certificates will be issued for all the participants.  </p>
+                        
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Mystic Hunt</h3>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal9"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/treasure.png);"></div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/adzap.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel10">Ad Sync</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/adzap.png" alt=""></div> 
+                                      <p class="mb-20 contents">Rules & Regulations :</p>
+                        <p class="contents">1. Team members: 3</p>
+                        <p class="contents">2. Preparation time for all teams will be 5 minutes</p>
+                        <p class="contents">3. The act should be delivered in 2 minutes</p>
+                        <p class="mb-20 contents">4. No existing television or social media advertisements</p>
+                        <p class="contents">Round1</p>
+                        <p class="mb-20 contents">1. Bring necessary materials like charts , colors , paint and required stationary things.</p>
+                        <p class="contents">Round2</p>
+                        <p class="contents">1. Rule1 : No usage of any materials</p>
+                        <p class="mb-20 contents">2. Rule2 : Results will be announced  purely based on your actions.  </p>
+                        <p class="contents">Note  </p>
+                        <p class="contents">E - certificates will be provided for every participants  </p>
+                        
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Mystic hunt </h3>
-                                <a href="mystic.html"><i class="ti-plus"></i></a>
+                                <h3>Ad Sync</h3>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal10"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/adzap.png);"></div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3>Ad sync </h3>
-                                <a href="ad.html"><i class="ti-plus"></i></a>
-                            </div>
+                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/merge.png);">
+                            <!-- Add data attributes for modal trigger -->
+                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                                <!-- <i class="ti-plus"></i> -->
+                            </button>
+                            <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel11">Merge Mania</h1></div> 
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="details"><img class="picture"  src="assets/img/gallery/merge.png" alt=""></div> 
+                                      <p class="contents">Number of Members per Team: 2</p>
+                        <p class="mb-20 contents">Event Description:</p>
+                        <p class="contents">Dive into an engaging team-building journey, a thrilling challenge that will test your team's collaboration and problem-solving skills. In this adventure, teams of two will work through a series of interconnected images to guess the answer, strengthening bonds as they unravel the mysteries together. </p>
+                        <p class="contents">Rules:  </p>
+                        <p class="contents">1. Teams must consist of exactly two members each.</p>
+                        <p class="contents">2. Follow the series of clues to breakthrough through the challenges.</p>
+                        <p class="contents">3. Puzzles may vary according to the rounds and the questions will be from different genres such as company name, songs etc.</p>
+                        <p class="contents">4. Players can skip 2 questions in first round. After using this choice players cannot continue the game further if they cannot guess the answer. This is applicable for second round but the players can skip the questions only once.</p>
+                        <p class="contents">5. Each team will be given 2 minutes in 1st round and 1 minute in 2nd round to guess the answer.</p>
+                        <p class="contents">6. Adherence to event rules is essential for a fair and enjoyable experience.</p>
+                        <p class="contents">7. The first team with highest points will be the champions.</p>
+                        <p class="contents">Expected time limit: 2 hrs</p>
+                        <p class="contents">Note  </p>
+                        <p class="contents">E- certificates will be issued for all the participants.  </p>
+                        
+                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/merge.png);"></div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Merge Mania </h3>
-                                <a href="connection.html"><i class="ti-plus"></i></a>
+                                <h3>Merge Mania</h3>
+                                <!-- Link to open modal (optional) -->
+                                <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal11"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -731,6 +1174,65 @@
 <!-- Jquery Plugins, main Jquery -->	
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+<!-- <script>
+    // Add an event listener to handle the modal trigger
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get all modal triggers
+        var modalTriggers = document.querySelectorAll('.modal-trigger');
+
+        // Loop through each modal trigger
+        modalTriggers.forEach(function (trigger) {
+            // Add a click event listener
+            trigger.addEventListener('click', function () {
+                // Get the target modal ID from the trigger's data-bs-target attribute
+                var targetModalId = this.getAttribute('data-bs-target');
+
+                // Get the target modal element
+                var targetModal = document.querySelector(targetModalId);
+
+                // If the target modal exists, show it
+                if (targetModal) {
+                    var modal = new bootstrap.Modal(targetModal);
+                    modal.show();
+                }
+            });
+        });
+    });
+</script> -->
+
+<!-- ... Your HTML code ... -->
+
+<!-- ... Your HTML code ... -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var modalTriggers = document.querySelectorAll('.modal-trigger');
+
+        modalTriggers.forEach(function (trigger) {
+            trigger.addEventListener('click', function () {
+                var targetModalId = this.getAttribute('data-bs-target');
+                var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
+                targetModal.show();
+            });
+        });
+
+        // Add an event listener to handle modal closing
+        document.addEventListener('click', function (event) {
+            var closeButton = event.target.closest('[data-bs-dismiss="modal"]');
+            if (closeButton) {
+                var targetModalId = closeButton.getAttribute('data-bs-target');
+                var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
+                targetModal.hide();
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
 
 </body>
 </html>
