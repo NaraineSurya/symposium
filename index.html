@@ -9,7 +9,7 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet" media="all">
-
+    
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -25,33 +25,71 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<style>
-    .modal-content{
-        background-color: black;
-    }
-    .modal-title{
-        color: white;
-    }
-    .contents{
-        color: white;
-    }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
     
-</style>
-
-
-
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <style>
+        .modal-content{
+            background-color: black;
+        }
+        .details h1.modal-title {
+            color: white;    
+            font-size: 32px; /* Adjust the font size as needed */
+        }
+        
+        .contents{
+            color: white;
+        }
+        /* Add these styles to your CSS or styles section */
+        .fixed-image {
+            height: 25%;
+            width: 30%;
+        }
+        
+        @media (max-width: 767px) {
+            /* Styles for screens up to 767px wide (small screens) */
+            .fixed-image {
+                height: 10%;
+                width: 100%;
+            }
+        }
+        
+        
+        
+        
+        .papermodel{
+            height:450px;
+            width: 100px;
+        }
+        /* Add these styles to your CSS or styles section */
+        .scrollable-content {
+            overflow-y: scroll;
+            max-height: 400px; /* You can adjust the max-height based on your design */
+            scrollbar-width: thin; /* For Firefox */
+            scrollbar-color: transparent transparent; /* For Firefox */
+        }
+        
+        .scrollable-content::-webkit-scrollbar {
+            width: 0.5em; /* For Chrome, Safari, and Edge */
+        }
+        
+        .scrollable-content::-webkit-scrollbar-thumb {
+            background-color: transparent; /* For Chrome, Safari, and Edge */
+        }
+        
+    </style>
+    
+    
+    
     <!-- <audio autoplay loop>
         <source src="assets/img/audio/aud.wav" type="audio/mp3">
         Your browser does not support the audio tag.
     </audio> -->
-  
+    
 </head>
 <body class="black-bg">
     <!-- ? Preloader Start -->
@@ -66,120 +104,120 @@
         </div>
     </div>
     <!-- Preloader Start -->
-<main>
-    <!--? slider Area Start-->
-    <div class="slider-area position-relative">
-      
-        <!-- <video autoplay loop muted plays-inline class="backclip">
-            <source src="assets/img/hero/vid.mp4" type="video/mp4">
-        </video> -->
-       
-        <div class="slider-active">
+    <main>
+        <!--? slider Area Start-->
+        <div class="slider-area position-relative">
             
-            <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-9 col-lg-9 col-md-10">
-                            <div class="hero__caption">
-                                <span data-animation="fadeInLeft" data-delay="0.1s">DEPARTMENT OF AI&DS</span>
-                                <h1 class="title1" data-animation="fadeInLeft" data-delay="1s">COGNEBULA'24</h1>
-                                <a href="courses.html" class=" border-btn hero-btn hvr-buzz-out" data-animation="fadeInLeft" data-delay="0.3s">REGISTER NOW</a>
+            <!-- <video autoplay loop muted plays-inline class="backclip">
+                <source src="assets/img/hero/vid.mp4" type="video/mp4">
+            </video> -->
+            
+            <div class="slider-active">
+                
+                <!-- Single Slider -->
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-9 col-lg-9 col-md-10">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInLeft" data-delay="0.1s">DEPARTMENT OF AI&DS</span>
+                                    <h1 class="title1" data-animation="fadeInLeft" data-delay="1s">COGNEBULA'24</h1>
+                                    <a href="courses.html" class=" border-btn hero-btn hvr-buzz-out" data-animation="fadeInLeft" data-delay="0.3s">REGISTER NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+        <!-- Traning categories Start -->
+        <!-- <section class="traning-categories black-bg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/gallery/cat1.png" alt="">
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3>Personal traning</h3>
+                                        <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
+                                        <a href="courses.html" class="border-btn">View Courses</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>          
-            </div>
-        </div>
-    </div>
-    <!-- slider Area End-->
-    <!-- Traning categories Start -->
-    <!-- <section class="traning-categories black-bg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="single-topic text-center mb-30">
-                        <div class="topic-img">
-                            <img src="assets/img/gallery/cat1.png" alt="">
-                            <div class="topic-content-box">
-                                <div class="topic-content">
-                                    <h3>Personal traning</h3>
-                                    <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
-                                    <a href="courses.html" class="border-btn">View Courses</a>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/gallery/cat2.png" alt="">
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3>Group traning</h3>
+                                        <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
+                                        <a href="courses.html" class="btn">View Courses</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="single-topic text-center mb-30">
-                        <div class="topic-img">
-                            <img src="assets/img/gallery/cat2.png" alt="">
-                            <div class="topic-content-box">
-                                <div class="topic-content">
-                                    <h3>Group traning</h3>
-                                    <p>You’ll look at graphs and charts in Task One, how to approach the task and <br> the language needed for a successful answer.</p>
-                                    <a href="courses.html" class="btn">View Courses</a>
-                                </div>
+            </div>
+        </section> -->
+        <!-- Traning categories End-->
+        <!--? Team -->
+        <section class="team-area fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section-tittle mt-65 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                            <h2 >TECHNICAL EVENTS</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
+                            <div class="cat-icon">
+                                <img src="assets/img/gallery/team1.png" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Body Building</a></h5>
+                                <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                            <div class="cat-icon">
+                                <img src="assets/img/gallery/team2.png" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Muscle Gain</a></h5>
+                                <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="cat-icon">
+                                <img src="assets/img/gallery/team3.png" alt="">
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Weight Loss</a></h5>
+                                <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
-        </div>
-    </section> -->
-    <!-- Traning categories End-->
-    <!--? Team -->
-    <section class="team-area fix">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section-tittle mt-65 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                        <h2 >TECHNICAL EVENTS</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team1.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Body Building</a></h5>
-                            <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team2.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Muscle Gain</a></h5>
-                            <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                        <div class="cat-icon">
-                            <img src="assets/img/gallery/team3.png" alt="">
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.html">Weight Loss</a></h5>
-                            <p>You’ll look at graphs and charts in Task One, how to approach the task </p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </section>
-    <!-- Services End -->
-    <!--? Gallery Area Start -->
-    <div class="gallery-area section-padding30 " style="
-    padding-bottom: 0px;">
+        </section>
+        <!-- Services End -->
+        <!--? Gallery Area Start -->
+        <div class="gallery-area section-padding30 " style="
+        padding-bottom: 0px;">
         <div class="container-fluid ">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
@@ -190,36 +228,45 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel1">Papyrus Prism</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel1">Papyrus Prism</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/paper.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="contents">Team members : 2- 3</p>
+                                                            <p class="mb-20 contents">Rules and regulations :</p>
+                                                            <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                                                            <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                                                            <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                                                            <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                                                            <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                                                            <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                                                            <p class="contents">The mail with submission should contain:</p>
+                                                            <p class="contents">Title - theme of the paper</p>
+                                                            <p class="contents">Name of the participants.</p>
+                                                            <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                                                            <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                                                            <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                                                            <p class="contents">NOTE :</p>
+                                                            <p class="contents">E -certificates will be provided to all the participants</p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/paper.png" alt=""></div> 
-                                      <p class="contents">Team members : 2- 3</p>
-                        <p class="mb-20 contents">Rules and regulations :</p>
-                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
-                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
-                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
-                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
-                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
-                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
-                        <p class="contents">The mail with submission should contain:</p>
-                        <p class="contents">Title - theme of the paper</p>
-                        <p class="contents">Name of the participants.</p>
-                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
-                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
-                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
-                        <p class="contents">NOTE :</p>
-                        <p class="contents">E -certificates will be provided to all the participants</p>
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -230,6 +277,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/debugging.png);">
@@ -238,46 +286,59 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel2">fixit fist</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel2">Fixit Fest</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/debugging.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="contents">Team members : 2- 3</p>
+                                                            <p class="mb-20 contents">Rules and regulations :</p>
+                                                            <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                                                            <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                                                            <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                                                            <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                                                            <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                                                            <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                                                            <p class="contents">The mail with submission should contain:</p>
+                                                            <p class="contents">Title - theme of the paper</p>
+                                                            <p class="contents">Name of the participants.</p>
+                                                            <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                                                            <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                                                            <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                                                            <p class="contents">NOTE :</p>
+                                                            <p class="contents">E -certificates will be provided to all the participants</p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/debugging.png" alt=""></div> 
-                                      <p class="contents">Team members : 2- 3</p>
-                        <p class="mb-20 contents">Rules and regulations :</p>
-                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
-                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
-                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
-                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
-                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
-                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
-                        <p class="contents">The mail with submission should contain:</p>
-                        <p class="contents">Title - theme of the paper</p>
-                        <p class="contents">Name of the participants.</p>
-                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
-                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
-                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
-                        <p class="contents">NOTE :</p>
-                        <p class="contents">E -certificates will be provided to all the participants</p>
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Fixit Fist </h3>
+                                <h3>Fixit Fest </h3>
                                 <!-- Link to open modal (optional) -->
                                 <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal2"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                
+                
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/uiux.png);">
@@ -286,36 +347,45 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel3">design fiesta</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel3">Design Fiesta</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/uiux.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="contents">Team members : 2- 3</p>
+                                                            <p class="mb-20 contents">Rules and regulations :</p>
+                                                            <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                                                            <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                                                            <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                                                            <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                                                            <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                                                            <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                                                            <p class="contents">The mail with submission should contain:</p>
+                                                            <p class="contents">Title - theme of the paper</p>
+                                                            <p class="contents">Name of the participants.</p>
+                                                            <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                                                            <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                                                            <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                                                            <p class="contents">NOTE :</p>
+                                                            <p class="contents">E -certificates will be provided to all the participants</p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/uiux.png" alt=""></div> 
-                                      <p class="contents">Team members : 2- 3</p>
-                        <p class="mb-20 contents">Rules and regulations :</p>
-                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
-                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
-                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
-                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
-                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
-                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
-                        <p class="contents">The mail with submission should contain:</p>
-                        <p class="contents">Title - theme of the paper</p>
-                        <p class="contents">Name of the participants.</p>
-                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
-                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
-                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
-                        <p class="contents">NOTE :</p>
-                        <p class="contents">E -certificates will be provided to all the participants</p>
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -335,36 +405,45 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel">prompt craft</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel4">Prompt craft</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/prompt.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="contents">Team members : 2- 3</p>
+                                                            <p class="mb-20 contents">Rules and regulations :</p>
+                                                            <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                                                            <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                                                            <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                                                            <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                                                            <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                                                            <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                                                            <p class="contents">The mail with submission should contain:</p>
+                                                            <p class="contents">Title - theme of the paper</p>
+                                                            <p class="contents">Name of the participants.</p>
+                                                            <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                                                            <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                                                            <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                                                            <p class="contents">NOTE :</p>
+                                                            <p class="contents">E -certificates will be provided to all the participants</p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/prompt.png" alt=""></div> 
-                                      <p class="contents">Team members : 2- 3</p>
-                        <p class="mb-20 contents">Rules and regulations :</p>
-                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
-                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
-                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
-                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
-                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
-                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
-                        <p class="contents">The mail with submission should contain:</p>
-                        <p class="contents">Title - theme of the paper</p>
-                        <p class="contents">Name of the participants.</p>
-                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
-                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
-                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
-                        <p class="contents">NOTE :</p>
-                        <p class="contents">E -certificates will be provided to all the participants</p>
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -375,6 +454,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/workshop.png);">
@@ -383,36 +463,45 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel5">workshop</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel5">Workshop</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/workshop.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="contents">Team members : 2- 3</p>
+                                                            <p class="mb-20 contents">Rules and regulations :</p>
+                                                            <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
+                                                            <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
+                                                            <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
+                                                            <p class="contents">Presentation time restrictions will be strictly followed.</p>
+                                                            <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
+                                                            <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
+                                                            <p class="contents">The mail with submission should contain:</p>
+                                                            <p class="contents">Title - theme of the paper</p>
+                                                            <p class="contents">Name of the participants.</p>
+                                                            <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
+                                                            <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
+                                                            <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
+                                                            <p class="contents">NOTE :</p>
+                                                            <p class="contents">E -certificates will be provided to all the participants</p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/workshop.png" alt=""></div> 
-                                      <p class="contents">Team members : 2- 3</p>
-                        <p class="mb-20 contents">Rules and regulations :</p>
-                        <p class="contents">Each presenter will get 10 min for presentation + 5 min for Q & A.</p>
-                        <p class="contents">The presentation should be only in MS PowerPoint or canva (ppt /pptx)</p>
-                        <p class="contents">The first slide should display the title of the presentation & name of the presenter.</p>
-                        <p class="contents">Presentation time restrictions will be strictly followed.</p>
-                        <p class="contents">The presenter will be provided with an LED screen with a USB drive (if required).</p>
-                        <p class="contents">Kindly mail your abstract and ppt to ( mail id)</p>
-                        <p class="contents">The mail with submission should contain:</p>
-                        <p class="contents">Title - theme of the paper</p>
-                        <p class="contents">Name of the participants.</p>
-                        <p class="contents">Presenters are requested to send your presentation in advance to avoid any last-minute technology issues.</p>
-                        <p class="contents">The deadline for presentation submission(dd/mm/yyyy)</p>
-                        <p class="contents">The time slot for all the presentations with the presenter's name will be updated . The participants will be informed accordingly.</p>
-                        <p class="contents">NOTE :</p>
-                        <p class="contents">E -certificates will be provided to all the participants</p>
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -424,29 +513,8 @@
                     </div>
                 </div>
                 
-
-                <!-- <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery5.png);"></div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3>Muscle gaining </h3>
-                                <a href="gallery.html"><i class="ti-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="box snake mb-30">
-                        <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/gallery6.png);"></div>
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h3>Muscle gaining </h3>
-                                <a href="gallery.html"><i class="ti-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                
+                
             </div>
         </div>
     </div>
@@ -458,7 +526,7 @@
     <div class="gallery-area section-padding30 ">
         <div class="container-fluid ">
             <div class="row">
-
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/ipl.png);">
@@ -467,44 +535,57 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel6">bidfest 11</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel6">Bidfest 11</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/ipl.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <ul>
+                                                                <li class="contents">😤🏏</li>
+                                                                <li class="mb-20 contents">Event members :: 4-5(per team)</li>
+                                                                <li class="contents">Event description:: IPL auction happens where you get to pick one team at random and then auction 11 players for that team.</li>
+                                                                <li class="contents">Event rules:: </li>
+                                                                <li class="contents">1. round one is quiz (based on ipl) to filter all the teams and top 8 teams to go into auction</li>
+                                                                <li class="contents">2. then you get a team at random choice and one of that teams players can be retained as a captain</li>
+                                                                <li class="contents">3. before auction date player sets will be released with base price to study the auction tactics as only those players will be used in auction </li>
+                                                                <li class="contents">4. the auction starts from the given set of players already given with different sets </li>
+                                                                <li class="contents">5. the winners will be selected based on the team balance ,form of the players and the common stats as the playing 11 will be the final team</li>
+                                                                <li class="contents">6. must have 5 bowling option , a wicketkeeper and must have at least one allrounder (only 4 foreign players).</li>
+                                                                <li class="contents">Expected time :: 3hrs  </li>
+                                                                <li class="contents">What they get if they win:: Cash price for first 2 place </li>
+                                                                <li class="contents">B+I+D+F+E+S+T=7</li>
+                                                                <li class="contents">Message is clear ✅🥰</li>
+                                                            </ul>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/ipl.png" alt=""></div> 
-                                      <p class="contents">😤🏏</p>
-                        <p class="mb-20 contents">Event members :: 4-5(per team)</p>
-                        <p class="contents">Event description:: IPL auction happens where you get to pick one team at random and then auction 11 players for that team.</p>
-                        <p class="contents">Event rules:: </p>
-                        <p class="contents">1. round one is quiz (based on ipl) to filter all the teams and top 8 teams to go into auction</p>
-                        <p class="contents">2. then you get a team at random choice and one of that teams players can be retained as a captain</p>
-                        <p class="contents">3. before auction date player sets will be released with base price to study the auction tactics as only those players will be used in auction </p>
-                        <p class="contents">4. the auction starts from the given set of players already given with different sets </p>
-                        <p class="contents">5. the winners will be selected based on the team balance ,form of the players and the common stats as the playing 11 will be the final team</p>
-                        <p class="contents">6. must have 5 bowling option , a wicketkeeper and must have at least one allrounder (only 4 foreign players).</p>
-                        <p class="contents">Expected time :: 3hrs  </p>
-                        <p class="contents">What they get if they win:: Cash price for first 2 place </p>
-                        <p class="contents">B+I+D+F+E+S+T=7</p>
-                        <p class="contents">Message is clear ✅🥰</p>
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h3>Bidfest 11</h3>
+                                <h3>Bidfest 11 </h3>
                                 <!-- Link to open modal (optional) -->
                                 <a href="#" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal6"><i class="ti-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/music.png);">
@@ -513,38 +594,47 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel7">tune twist</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel7">Tune Twist</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/music.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="contents">Team: maximum 3 per team</p>
+                                                            <p class="mb-20 contents">Rounds: 3</p>
+                                                            <p class="contents">Round 1:  </p>
+                                                            <p class="contents">1. Guess the song from BGM.  </p>
+                                                            <p class="contents">2. Each team will be given three BGM and 30 seconds time.</p>
+                                                            <p class="contents">3. The team that finds all the BGM will move to next round</p>
+                                                            <p class="contents">Round 2:  </p>
+                                                            <p class="contents">1. Guess the song from lyrics that is translated in english.  </p>
+                                                            <p class="contents">2. Each team will be given 3 lyrics of tamil songs that are translated in english. </p>
+                                                            <p class="contents">3. Each team will be given 20 seconds for each lyrics.</p>
+                                                            <p class="contents">4. Team that gets the maximum point moves to final round. </p>
+                                                            <p class="contents">Round 3:  </p>
+                                                            <p class="contents">1. Bet on number of dialogues you can say said by the celebrity displayed. </p>
+                                                            <p class="contents">2. This is a face-off round. One person from the team participates. </p>
+                                                            <p class="contents">3. Photo of a celebrity will be displayed. </p>
+                                                            <p class="contents">4. Each person should take turns in betting on number of dialogues they can say that is said by the celebrity. </p>
+                                                            <p class="contents">5. The team that obtains maximum points is the winner.</p>
+                                                            <p class="contents">6. Points will be deducted if other members of the team tries to help.</p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/music.png" alt=""></div> 
-                                      <p class="contents">Team: maximum 3 per team</p>
-                        <p class="mb-20 contents">Rounds: 3</p>
-                        <p class="contents">Round 1:  </p>
-                        <p class="contents">1. Guess the song from BGM.  </p>
-                        <p class="contents">2. Each team will be given three BGM and 30 seconds time.</p>
-                        <p class="contents">3. The team that finds all the BGM will move to next round</p>
-                        <p class="contents">Round 2:  </p>
-                        <p class="contents">1. Guess the song from lyrics that is translated in english.  </p>
-                        <p class="contents">2. Each team will be given 3 lyrics of tamil songs that are translated in english. </p>
-                        <p class="contents">3. Each team will be given 20 seconds for each lyrics.</p>
-                        <p class="contents">4. Team that gets the maximum point moves to final round. </p>
-                        <p class="contents">Round 3:  </p>
-                        <p class="contents">1. Bet on number of dialogues you can say said by the celebrity displayed. </p>
-                        <p class="contents">2. This is a face-off round. One person from the team participates. </p>
-                        <p class="contents">3. Photo of a celebrity will be displayed. </p>
-                        <p class="contents">4. Each person should take turns in betting on number of dialogues they can say that is said by the celebrity. </p>
-                        <p class="contents">5. The team that obtains maximum points is the winner.</p>
-                        <p class="contents">6. Points will be deducted if other members of the team tries to help.</p>
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -555,6 +645,8 @@
                         </div>
                     </div>
                 </div>
+                
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/pubg.png);">
@@ -563,54 +655,62 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel8">Blood Raven</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel8">Blood Raven</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/pubg.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="contents">Rules & Regulations :</p>
+                                                            <p class="contents">Team members: duo vs duo / duo vs solo</p>
+                                                            <p class="mb-20 contents">BGMI</p>
+                                                            <p class="contents">Round 1 </p>
+                                                            <p class="contents">1. Classic erangle</p>
+                                                            <p class="contents">Round 2</p>
+                                                            <p class="contents">1. 10(Ten) team will be shortened </p>
+                                                            <p class="contents">Round 3</p>
+                                                            <p class="contents">1. 4(Four) team will be shortened and TDM will be conducted for each team</p>
+                                                            <p class="contents">Round 4</p>
+                                                            <p class="contents">1. 2(Two) team will be shortened and TDM will be conducted </p>
+                                                            <p class="contents">Rules: </p>
+                                                            <p class="contents">1. No internet and no charger will be provided</p>
+                                                            <p class="contents">2. Triggers are not allowed</p>
+                                                            <p class="contents">3. Tablet/ipad are not allowed</p>
+                                                            <p class="mb-20 contents">4. New ACC are not allowed</p>
+                                                            <p class="mb-20 contents">FREE FIRE</p>
+                                                            <p class="contents">Round 1</p>
+                                                            <p class="contents">1. CLASSIC/BERMUDA</p>
+                                                            <p class="contents">Round 2</p>
+                                                            <p class="contents">1. 10(Ten) team will be shortened</p>
+                                                            <p class="contents">Round 3</p>
+                                                            <p class="contents">1. 4(Four) team will be shortened and ROOM MATCH will be conducted for each team</p>
+                                                            <p class="contents">Round 4</p>
+                                                            <p class="mb-20 contents">1. 2(Two) team will be shortened and ROOM MATCH will be conducted</p>
+                                                            <p class="mb-20 contents">Rules:</p>
+                                                            <p class="contents">1. All CHARACTER SKILLS and GUN SKIN are allowed </p>
+                                                            <p class="contents">2. No internet and no charger will be provided</p>
+                                                            <p class="contents">3. Triggers are not allowed</p>
+                                                            <p class="contents">4. Tablet/ipad are not allowed</p>
+                                                            <p class="mb-20 contents">5. New ACC are not allowed</p>
+                                                            <p class="mb-20 contents">Note:</p>
+                                                            <p class="mb-20 contents">E - certificate will be provided for every participants</p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/pubg.png" alt=""></div> 
-                                      <p class="contents">Rules & Regulations :</p>
-                        <p class="contents">Team members: duo vs duo / duo vs solo</p>
-                        <p class="mb-20 contents">BGMI</p>
-                        <p class="contents">Round 1 </p>
-                        <p class="contents">1. Classic erangle</p>
-                        <p class="contents">Round 2</p>
-                        <p class="contents">1. 10(Ten) team will be shortened </p>
-                        <p class="contents">Round 3</p>
-                        <p class="contents">1. 4(Four) team will be shortened and TDM will be conducted for each team</p>
-                        <p class="contents">Round 4</p>
-                        <p class="contents">1. 2(Two) team will be shortened and TDM will be conducted </p>
-                        <p class="contents">Rules: </p>
-                        <p class="contents">1. No internet and no charger will be provided</p>
-                        <p class="contents">2. Triggers are not allowed</p>
-                        <p class="contents">3. Tablet/ipad are not allowed</p>
-                        <p class="mb-20 contents">4. New ACC are not allowed</p>
-                        <p class="mb-20 contents">FREE FIRE</p>
-                        <p class="contents">Round 1</p>
-                        <p class="contents">1. CLASSIC/BERMUDA</p>
-                        <p class="contents">Round 2</p>
-                        <p class="contents">1. 10(Ten) team will be shortened</p>
-                        <p class="contents">Round 3</p>
-                        <p class="contents">1. 4(Four) team will be shortened and ROOM MATCH will be conducted for each team</p>
-                        <p class="contents">Round 4</p>
-                        <p class="mb-20 contents">1. 2(Two) team will be shortened and ROOM MATCH will be conducted</p>
-                        <p class="mb-20 contents">Rules:</p>
-                        <p class="contents">1. All CHARACTER SKILLS and GUN SKIN are allowed </p>
-                        <p class="contents">2. No internet and no charger will be provided</p>
-                        <p class="contents">3. Triggers are not allowed</p>
-                        <p class="contents">4. Tablet/ipad are not allowed</p>
-                        <p class="mb-20 contents">5. New ACC are not allowed</p>
-                        <p class="mb-20 contents">Note:</p>
-                        <p class="mb-20 contents">E - certificate will be provided for every participants</p>
-
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -622,6 +722,8 @@
                     </div>
                 </div>
                 
+                
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/treasure.png);">
@@ -630,33 +732,41 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel8">Mystic hunt</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel9">Mystic Hunt</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/treasure.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="contents">Number of Members per Team: 3</p>
+                                                            <p class="mb-20 contents">Event Description:</p>
+                                                            <p class="contents">Embark on an exciting treasure hunt adventure where teams of three will navigate through the campus, solving clues and overcoming challenges to uncover hidden treasures. The event promises a mix of mystery, teamwork, and exploration as participants decode clues leading them from one location to the next. </p>
+                                                            <p class="contents">Rules:  </p>
+                                                            <p class="contents">1. Teams must consist of exactly three members each.</p>
+                                                            <p class="contents">2. Participants are required to follow the provided clues to discover the next location.</p>
+                                                            <p class="contents">3. Clues may involve riddles, puzzles, or physical challenges.</p>
+                                                            <p class="contents">4. Teams must respect campus rules and regulations during the hunt.</p>
+                                                            <p class="contents">5. The first team to successfully locate and retrieve the hidden treasure will be declared the winner</p>
+                                                            <p class="contents">Expected time limit 1.5 -2 hrs</p>
+                                                            <p class="contents">Note  </p>
+                                                            <p class="contents">E- certificates will be issued for all the participants.  </p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/treasure.png" alt=""></div> 
-                                      <p class="contents">Number of Members per Team: 3</p>
-                        <p class="mb-20 contents">Event Description:</p>
-                        <p class="contents">Embark on an exciting treasure hunt adventure where teams of three will navigate through the campus, solving clues and overcoming challenges to uncover hidden treasures. The event promises a mix of mystery, teamwork, and exploration as participants decode clues leading them from one location to the next. </p>
-                        <p class="contents">Rules:  </p>
-                        <p class="contents">1. Teams must consist of exactly three members each.</p>
-                        <p class="contents">2. Participants are required to follow the provided clues to discover the next location.</p>
-                        <p class="contents">3. Clues may involve riddles, puzzles, or physical challenges.</p>
-                        <p class="contents">4. Teams must respect campus rules and regulations during the hunt.</p>
-                        <p class="contents">5. The first team to successfully locate and retrieve the hidden treasure will be declared the winner</p>
-                        <p class="contents">Expected time limit 1.5 -2 hrs</p>
-                        <p class="contents">Note  </p>
-                        <p class="contents">E- certificates will be issued for all the participants.  </p>
-                        
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -667,6 +777,8 @@
                         </div>
                     </div>
                 </div>
+                
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/adzap.png);">
@@ -675,33 +787,41 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel10">Ad Sync</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel10">Ad Sync</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/adzap.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="mb-20 contents">Rules & Regulations :</p>
+                                                            <p class="contents">1. Team members: 3</p>
+                                                            <p class="contents">2. Preparation time for all teams will be 5 minutes</p>
+                                                            <p class="contents">3. The act should be delivered in 2 minutes</p>
+                                                            <p class="mb-20 contents">4. No existing television or social media advertisements</p>
+                                                            <p class="contents">Round1</p>
+                                                            <p class="mb-20 contents">1. Bring necessary materials like charts , colors , paint and required stationary things.</p>
+                                                            <p class="contents">Round2</p>
+                                                            <p class="contents">1. Rule1 : No usage of any materials</p>
+                                                            <p class="mb-20 contents">2. Rule2 : Results will be announced  purely based on your actions.  </p>
+                                                            <p class="contents">Note  </p>
+                                                            <p class="contents">E - certificates will be provided for every participants  </p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/adzap.png" alt=""></div> 
-                                      <p class="mb-20 contents">Rules & Regulations :</p>
-                        <p class="contents">1. Team members: 3</p>
-                        <p class="contents">2. Preparation time for all teams will be 5 minutes</p>
-                        <p class="contents">3. The act should be delivered in 2 minutes</p>
-                        <p class="mb-20 contents">4. No existing television or social media advertisements</p>
-                        <p class="contents">Round1</p>
-                        <p class="mb-20 contents">1. Bring necessary materials like charts , colors , paint and required stationary things.</p>
-                        <p class="contents">Round2</p>
-                        <p class="contents">1. Rule1 : No usage of any materials</p>
-                        <p class="mb-20 contents">2. Rule2 : Results will be announced  purely based on your actions.  </p>
-                        <p class="contents">Note  </p>
-                        <p class="contents">E - certificates will be provided for every participants  </p>
-                        
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -712,6 +832,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/merge.png);">
@@ -720,35 +841,43 @@
                                 <!-- <i class="ti-plus"></i> -->
                             </button>
                             <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <div class="details"><h1 class="modal-title fs-5 details" id="exampleModalLabel11">Merge Mania</h1></div> 
-                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="details"><h1 class="modal-title  details" id="exampleModalLabel11">Merge Mania</h1></div>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid"> <!-- Use container-fluid for a full-width container -->
+                                                <div class="row">
+                                                    <div class="col-md-6 fixed-image">
+                                                        <div class="details"><img class="picture" src="assets/img/gallery/merge.png" alt=""></div>
+                                                    </div>
+                                                    <div class="col-md-6 scrollable-content">
+                                                        <div class="contents">
+                                                            <p class="contents">Number of Members per Team: 2</p>
+                                                            <p class="mb-20 contents">Event Description:</p>
+                                                            <p class="contents">Dive into an engaging team-building journey, a thrilling challenge that will test your team's collaboration and problem-solving skills. In this adventure, teams of two will work through a series of interconnected images to guess the answer, strengthening bonds as they unravel the mysteries together. </p>
+                                                            <p class="contents">Rules:  </p>
+                                                            <p class="contents">1. Teams must consist of exactly two members each.</p>
+                                                            <p class="contents">2. Follow the series of clues to breakthrough through the challenges.</p>
+                                                            <p class="contents">3. Puzzles may vary according to the rounds and the questions will be from different genres such as company name, songs etc.</p>
+                                                            <p class="contents">4. Players can skip 2 questions in first round. After using this choice players cannot continue the game further if they cannot guess the answer. This is applicable for second round but the players can skip the questions only once.</p>
+                                                            <p class="contents">5. Each team will be given 2 minutes in 1st round and 1 minute in 2nd round to guess the answer.</p>
+                                                            <p class="contents">6. Adherence to event rules is essential for a fair and enjoyable experience.</p>
+                                                            <p class="contents">7. The first team with highest points will be the champions.</p>
+                                                            <p class="contents">Expected time limit: 2 hrs</p>
+                                                            <p class="contents">Note  </p>
+                                                            <p class="contents">E- certificates will be issued for all the participants.  </p>
+                                                            <a href="courses.html" class="border-btn">REGISTER NOW</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <div class="details"><img class="picture"  src="assets/img/gallery/merge.png" alt=""></div> 
-                                      <p class="contents">Number of Members per Team: 2</p>
-                        <p class="mb-20 contents">Event Description:</p>
-                        <p class="contents">Dive into an engaging team-building journey, a thrilling challenge that will test your team's collaboration and problem-solving skills. In this adventure, teams of two will work through a series of interconnected images to guess the answer, strengthening bonds as they unravel the mysteries together. </p>
-                        <p class="contents">Rules:  </p>
-                        <p class="contents">1. Teams must consist of exactly two members each.</p>
-                        <p class="contents">2. Follow the series of clues to breakthrough through the challenges.</p>
-                        <p class="contents">3. Puzzles may vary according to the rounds and the questions will be from different genres such as company name, songs etc.</p>
-                        <p class="contents">4. Players can skip 2 questions in first round. After using this choice players cannot continue the game further if they cannot guess the answer. This is applicable for second round but the players can skip the questions only once.</p>
-                        <p class="contents">5. Each team will be given 2 minutes in 1st round and 1 minute in 2nd round to guess the answer.</p>
-                        <p class="contents">6. Adherence to event rules is essential for a fair and enjoyable experience.</p>
-                        <p class="contents">7. The first team with highest points will be the champions.</p>
-                        <p class="contents">Expected time limit: 2 hrs</p>
-                        <p class="contents">Note  </p>
-                        <p class="contents">E- certificates will be issued for all the participants.  </p>
-                        
-                        <a href="courses.html" class="border-btn">REGISTER NOW</a>
-                                    </div>
-                                    
-                                  </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="overlay">
                             <div class="overlay-content">
@@ -759,6 +888,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -959,280 +1089,280 @@
                             Experience an electrifying convergence where cutting-edge technology meets creative brilliance. 
                             Our event seamlessly blends tech and non-tech domains, offering a dynamic atmosphere for limitless knowledge. 
                             Join us on a journey fueled by artificial intelligence, redefining the symposium experience.
-                             Welcome to a celebration of excellence, where the future unfolds at every keystroke.
-                             </p>
+                            Welcome to a celebration of excellence, where the future unfolds at every keystroke.
+                        </p>
                         <!-- <p class="mb-40">Task One, how to approach the task and the language needed for a successful answer. You’ll 
-                        examine Task Two questions and learn how to plan, write and check academic essays.</p>
-                        <a href="courses.html" class="border-btn">My Courses</a> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Area End -->
-    <!--? Blog Area Start -->
-    <!-- <section class="home-blog-area pt-10 pb-50">
-        <div class="container">
-            Section Tittle
-            <div class="row justify-content-center">
-                <div class="col-lg-7 col-md-9 col-sm-10">
-                    <div class="section-tittle text-center mb-100 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                        <h2>From Blog</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="assets/img/gallery/blog1.png" alt="">
-                            </div>
-                            <div class="blog-cap">
-                                <span>Gym & Fitness</span>
-                                <h3><a href="blog_details.html">Your Antibiotic One Day To 10 Day Options</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">
-                        <div class="blog-img-cap">
-                            <div class="blog-img">
-                                <img src="assets/img/gallery/blog2.png" alt="">
-                            </div>
-                            <div class="blog-cap">
-                                <span>Gym & Fitness</span>
-                                <h3><a href="blog_details.html">Your Antibiotic One Day To 10 Day Options</a></h3>
-                            </div>
+                            examine Task Two questions and learn how to plan, write and check academic essays.</p>
+                            <a href="courses.html" class="border-btn">My Courses</a> -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
-    <!-- Blog Area End -->
-    <!--? video_start -->
-    <div class="video-area section-bg2 d-flex align-items-center"  data-background="assets/img/gallery/cog.png">
-        <div class="container">
-            <div class="video-wrap position-relative">
-                <div class="video-icon" >
-                    <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- video_end -->
-    <!-- ? services-area -->
-    <section class="services-area">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                        <div class="features-icon">
-                            <img class="logo"  src="assets/img/icon/location (1).png" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Location</h3>
-                            <p>Velammal Engineering College,Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066.
-                                 </p>
+        </section>
+        <!-- About Area End -->
+        <!--? Blog Area Start -->
+        <!-- <section class="home-blog-area pt-10 pb-50">
+            <div class="container">
+                Section Tittle
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-md-9 col-sm-10">
+                        <div class="section-tittle text-center mb-100 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                            <h2>From Blog</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="features-icon">
-                            <img class="logo" src="assets/img/icon/contact-mail.png" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Phone</h3>
-                            <p>+91 6374097419</p>
-                            <p>+91 9940134239</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                        <div class="features-icon">
-                            <img class="logo"  src="assets/img/icon/email.png" alt="">
-                        </div>
-                        <div class="features-caption">
-                            <h3>Email</h3>
-                            <p>jacson767@gmail.com</p>
-                            <p>contact56@zacsion.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<!-- <footer>
-    ? Footer Start
-    <div class="footer-area black-bg">
-        <div class="container">
-            <div class="footer-top footer-padding">
-                Footer Menu
                 <div class="row">
-                    <div class="col-xl-12">
-                        <div class="single-footer-caption mb-50 text-center">
-                            logo
-                            <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                            </div>
-                            Menu
-                            Header Start
-                            <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                                <div class="main-header main-header2">
-                                    <div class="menu-wrapper menu-wrapper2">
-                                        Main-menu
-                                        <div class="main-menu main-menu2 text-center">
-                                            <nav>
-                                                <ul>
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="courses.html">Courses</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="gallery.html">Gallery</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>   
-                                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                            <div class="blog-img-cap">
+                                <div class="blog-img">
+                                    <img src="assets/img/gallery/blog1.png" alt="">
+                                </div>
+                                <div class="blog-cap">
+                                    <span>Gym & Fitness</span>
+                                    <h3><a href="blog_details.html">Your Antibiotic One Day To 10 Day Options</a></h3>
                                 </div>
                             </div>
-                            Header End
-                            social
-                            <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".6s">
+                            <div class="blog-img-cap">
+                                <div class="blog-img">
+                                    <img src="assets/img/gallery/blog2.png" alt="">
+                                </div>
+                                <div class="blog-cap">
+                                    <span>Gym & Fitness</span>
+                                    <h3><a href="blog_details.html">Your Antibiotic One Day To 10 Day Options</a></h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            Footer Bottom
-            <div class="footer-bottom">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-12">
-                        <div class="footer-copy-right text-center">
-                            <p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
-                              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                              Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      Footer End
-  </footer> -->
-  <!-- Scroll Up -->
-  <div id="back-top" >
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-</div>
-
-
-<!-- JS here -->
-
-<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<!-- Jquery, Popper, Bootstrap -->
-<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="./assets/js/popper.min.js"></script>
-<script src="./assets/js/bootstrap.min.js"></script>
-<!-- Jquery Mobile Menu -->
-<script src="./assets/js/jquery.slicknav.min.js"></script>
-
-<!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="./assets/js/owl.carousel.min.js"></script>
-<script src="./assets/js/slick.min.js"></script>
-<!-- One Page, Animated-HeadLin -->
-<script src="./assets/js/wow.min.js"></script>
-<script src="./assets/js/animated.headline.js"></script>
-<script src="./assets/js/jquery.magnific-popup.js"></script>
-
-<!-- Date Picker -->
-<script src="./assets/js/gijgo.min.js"></script>
-<!-- Nice-select, sticky -->
-<script src="./assets/js/jquery.nice-select.min.js"></script>
-<script src="./assets/js/jquery.sticky.js"></script>
-
-<!-- counter , waypoint,Hover Direction -->
-<script src="./assets/js/jquery.counterup.min.js"></script>
-<script src="./assets/js/waypoints.min.js"></script>
-<script src="./assets/js/jquery.countdown.min.js"></script>
-<script src="./assets/js/hover-direction-snake.min.js"></script>
-
-<!-- contact js -->
-<script src="./assets/js/contact.js"></script>
-<script src="./assets/js/jquery.form.js"></script>
-<script src="./assets/js/jquery.validate.min.js"></script>
-<script src="./assets/js/mail-script.js"></script>
-<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-
-<!-- Jquery Plugins, main Jquery -->	
-<script src="./assets/js/plugins.js"></script>
-<script src="./assets/js/main.js"></script>
-<!-- <script>
-    // Add an event listener to handle the modal trigger
-    document.addEventListener('DOMContentLoaded', function () {
-        // Get all modal triggers
-        var modalTriggers = document.querySelectorAll('.modal-trigger');
-
-        // Loop through each modal trigger
-        modalTriggers.forEach(function (trigger) {
-            // Add a click event listener
-            trigger.addEventListener('click', function () {
-                // Get the target modal ID from the trigger's data-bs-target attribute
-                var targetModalId = this.getAttribute('data-bs-target');
-
-                // Get the target modal element
-                var targetModal = document.querySelector(targetModalId);
-
-                // If the target modal exists, show it
-                if (targetModal) {
-                    var modal = new bootstrap.Modal(targetModal);
-                    modal.show();
-                }
+        </section> -->
+        <!-- Blog Area End -->
+        <!--? video_start -->
+        <div class="video-area section-bg2 d-flex align-items-center"  data-background="assets/img/gallery/cog.png">
+            <div class="container">
+                <div class="video-wrap position-relative">
+                    <div class="video-icon" >
+                        <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- video_end -->
+        <!-- ? services-area -->
+        <section class="services-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                            <div class="features-icon">
+                                <img class="logo"  src="assets/img/icon/location (1).png" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3>Location</h3>
+                                <p>Velammal Engineering College,Ambattur Red Hills Rd, Velammal Nagar, Surapet, Chennai, Tamil Nadu 600066.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="features-icon">
+                                <img class="logo" src="assets/img/icon/contact-mail.png" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3>Phone</h3>
+                                <p>+91 6374097419</p>
+                                <p>+91 9940134239</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-40 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                            <div class="features-icon">
+                                <img class="logo"  src="assets/img/icon/email.png" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3>Email</h3>
+                                <p>jacson767@gmail.com</p>
+                                <p>contact56@zacsion.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer>
+        ? Footer Start
+        <div class="footer-area black-bg">
+            <div class="container">
+                <div class="footer-top footer-padding">
+                    Footer Menu
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="single-footer-caption mb-50 text-center">
+                                logo
+                                <div class="footer-logo wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                </div>
+                                Menu
+                                Header Start
+                                <div class="header-area main-header2 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                                    <div class="main-header main-header2">
+                                        <div class="menu-wrapper menu-wrapper2">
+                                            Main-menu
+                                            <div class="main-menu main-menu2 text-center">
+                                                <nav>
+                                                    <ul>
+                                                        <li><a href="index.html">Home</a></li>
+                                                        <li><a href="about.html">About</a></li>
+                                                        <li><a href="courses.html">Courses</a></li>
+                                                        <li><a href="pricing.html">Pricing</a></li>
+                                                        <li><a href="gallery.html">Gallery</a></li>
+                                                        <li><a href="contact.html">Contact</a></li>
+                                                    </ul>
+                                                </nav>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                                Header End
+                                social
+                                <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                Footer Bottom
+                <div class="footer-bottom">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-12">
+                            <div class="footer-copy-right text-center">
+                                <p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            Footer End
+        </footer> -->
+        <!-- Scroll Up -->
+        <div id="back-top" >
+            <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+        </div>
+        
+        
+        <!-- JS here -->
+        
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <!-- Jquery, Popper, Bootstrap -->
+        <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
+        
+        <!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+        <script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
+        
+        <!-- Date Picker -->
+        <script src="./assets/js/gijgo.min.js"></script>
+        <!-- Nice-select, sticky -->
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+        <script src="./assets/js/jquery.sticky.js"></script>
+        
+        <!-- counter , waypoint,Hover Direction -->
+        <script src="./assets/js/jquery.counterup.min.js"></script>
+        <script src="./assets/js/waypoints.min.js"></script>
+        <script src="./assets/js/jquery.countdown.min.js"></script>
+        <script src="./assets/js/hover-direction-snake.min.js"></script>
+        
+        <!-- contact js -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        
+        <!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <!-- <script>
+            // Add an event listener to handle the modal trigger
+            document.addEventListener('DOMContentLoaded', function () {
+                // Get all modal triggers
+                var modalTriggers = document.querySelectorAll('.modal-trigger');
+                
+                // Loop through each modal trigger
+                modalTriggers.forEach(function (trigger) {
+                    // Add a click event listener
+                    trigger.addEventListener('click', function () {
+                        // Get the target modal ID from the trigger's data-bs-target attribute
+                        var targetModalId = this.getAttribute('data-bs-target');
+                        
+                        // Get the target modal element
+                        var targetModal = document.querySelector(targetModalId);
+                        
+                        // If the target modal exists, show it
+                        if (targetModal) {
+                            var modal = new bootstrap.Modal(targetModal);
+                            modal.show();
+                        }
+                    });
+                });
             });
-        });
-    });
-</script> -->
-
-<!-- ... Your HTML code ... -->
-
-<!-- ... Your HTML code ... -->
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var modalTriggers = document.querySelectorAll('.modal-trigger');
-
-        modalTriggers.forEach(function (trigger) {
-            trigger.addEventListener('click', function () {
-                var targetModalId = this.getAttribute('data-bs-target');
-                var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
-                targetModal.show();
+        </script> -->
+        
+        <!-- ... Your HTML code ... -->
+        
+        <!-- ... Your HTML code ... -->
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var modalTriggers = document.querySelectorAll('.modal-trigger');
+                
+                modalTriggers.forEach(function (trigger) {
+                    trigger.addEventListener('click', function () {
+                        var targetModalId = this.getAttribute('data-bs-target');
+                        var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
+                        targetModal.show();
+                    });
+                });
+                
+                // Add an event listener to handle modal closing
+                document.addEventListener('click', function (event) {
+                    var closeButton = event.target.closest('[data-bs-dismiss="modal"]');
+                    if (closeButton) {
+                        var targetModalId = closeButton.getAttribute('data-bs-target');
+                        var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
+                        targetModal.hide();
+                    }
+                });
             });
-        });
-
-        // Add an event listener to handle modal closing
-        document.addEventListener('click', function (event) {
-            var closeButton = event.target.closest('[data-bs-dismiss="modal"]');
-            if (closeButton) {
-                var targetModalId = closeButton.getAttribute('data-bs-target');
-                var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
-                targetModal.hide();
-            }
-        });
-    });
-</script>
-
-
-
-
-
-
-
-</body>
-</html>
+        </script>
+        
+        
+        
+        
+        
+        
+        
+    </body>
+    </html>
