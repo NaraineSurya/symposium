@@ -33,9 +33,21 @@
     
     
     <style>
-        .modal-content{
-            background-color: black;
-        }
+        .modal-content {
+        background: linear-gradient(90deg, rgb(75, 4, 96), rgb(26, 1, 35));
+        box-shadow: 0 0 10px rgba(158, 74, 74, 0.5); /* Adjust the shadow color and opacity as needed */
+    }
+
+    /* Optionally, you can add animation for the glowing effect */
+    @keyframes glow {
+        0% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+        50% { box-shadow: 0 0 20px rgb(221, 143, 143); }
+        100% { box-shadow: 0 0 10px rgba(151, 62, 62, 0.5); }
+    }
+
+    .modal-content.glowing {
+        animation: glow 2s infinite alternate;
+    }
         .details h1.modal-title {
             color: white;    
             font-size: 32px; /* Adjust the font size as needed */
@@ -223,10 +235,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/paper.png);">
-                            <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                            
                             <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -282,9 +291,7 @@
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/debugging.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                            
                             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -336,16 +343,11 @@
                     </div>
                 </div>
                 
-                
-                
-                
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/uiux.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                            
                             <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -401,9 +403,7 @@
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/prompt.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                            
                             <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -459,9 +459,7 @@
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/workshop.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                            
                             <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -531,9 +529,7 @@
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/ipl.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                           
                             <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -590,9 +586,7 @@
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/music.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal7">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                            
                             <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -651,9 +645,7 @@
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/pubg.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal8">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                            
                             <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -728,9 +720,7 @@
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/treasure.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal9">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                            
                             <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -783,9 +773,7 @@
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/adzap.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal10">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                           
                             <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -837,9 +825,7 @@
                     <div class="box snake mb-30">
                         <div class="gallery-img big-img" style="background-image: url(assets/img/gallery/merge.png);">
                             <!-- Add data attributes for modal trigger -->
-                            <button type="button" class="modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal11">
-                                <!-- <i class="ti-plus"></i> -->
-                            </button>
+                            
                             <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
                                 <div class="modal-dialog modal-xl"> <!-- Use modal-xl to expand the modal content -->
                                     <div class="modal-content">
@@ -1335,28 +1321,29 @@
         <!-- ... Your HTML code ... -->
         
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var modalTriggers = document.querySelectorAll('.modal-trigger');
-                
-                modalTriggers.forEach(function (trigger) {
-                    trigger.addEventListener('click', function () {
-                        var targetModalId = this.getAttribute('data-bs-target');
-                        var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
-                        targetModal.show();
-                    });
-                });
-                
-                // Add an event listener to handle modal closing
-                document.addEventListener('click', function (event) {
-                    var closeButton = event.target.closest('[data-bs-dismiss="modal"]');
-                    if (closeButton) {
-                        var targetModalId = closeButton.getAttribute('data-bs-target');
-                        var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
-                        targetModal.hide();
-                    }
-                });
+    document.addEventListener('DOMContentLoaded', function () {
+        var modalTriggers = document.querySelectorAll('.modal-trigger');
+        
+        modalTriggers.forEach(function (trigger) {
+            trigger.addEventListener('click', function () {
+                var targetModalId = this.getAttribute('data-bs-target');
+                var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
+                targetModal.show();
             });
-        </script>
+        });
+        
+        // Add an event listener to handle modal closing
+        document.addEventListener('click', function (event) {
+            var closeButton = event.target.closest('[data-bs-dismiss="modal"]');
+            if (closeButton) {
+                var targetModalId = closeButton.getAttribute('data-bs-target');
+                var targetModal = new bootstrap.Modal(document.getElementById(targetModalId));
+                targetModal.hide();
+            }
+        });
+    });
+</script>
+        
         
         
         
